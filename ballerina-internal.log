@@ -1,0 +1,67 @@
+[2018-07-04 14:05:54,296] ERROR {org.ballerinalang.launcher.Main} - Do you mean to run the ballerina package as a project? If so run ballerina init to make it a project with a .ballerina directory 
+org.ballerinalang.util.exceptions.BallerinaException: Do you mean to run the ballerina package as a project? If so run ballerina init to make it a project with a .ballerina directory
+	at org.ballerinalang.launcher.LauncherUtils.runProgram(LauncherUtils.java:90)
+	at org.ballerinalang.launcher.Main$RunCmd.execute(Main.java:256)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-04 14:11:01,266] ERROR {org.ballerinalang.launcher.Main} - Do you mean to run the ballerina package as a project? If so run ballerina init to make it a project with a .ballerina directory 
+org.ballerinalang.util.exceptions.BallerinaException: Do you mean to run the ballerina package as a project? If so run ballerina init to make it a project with a .ballerina directory
+	at org.ballerinalang.launcher.LauncherUtils.runProgram(LauncherUtils.java:90)
+	at org.ballerinalang.launcher.Main$RunCmd.execute(Main.java:256)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-04 14:28:33,245] ERROR {org.ballerinalang.launcher.Main} - main function not found in 'Gmail-Reader' 
+java.lang.RuntimeException: main function not found in 'Gmail-Reader'
+	at org.ballerinalang.launcher.LauncherUtils.runProgram(LauncherUtils.java:101)
+	at org.ballerinalang.launcher.Main$RunCmd.execute(Main.java:256)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-04 14:49:04,533] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyzeNode(SemanticAnalyzer.java:1187)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyzeNode(SemanticAnalyzer.java:1158)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyzeStmt(SemanticAnalyzer.java:1154)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.visit(SemanticAnalyzer.java:310)
+	at org.wso2.ballerinalang.compiler.tree.BLangFunction.accept(BLangFunction.java:66)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyzeNode(SemanticAnalyzer.java:1187)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyzeNode(SemanticAnalyzer.java:1158)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyzeDef(SemanticAnalyzer.java:1150)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.lambda$analyzeFunctions$224(SemanticAnalyzer.java:254)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyzeFunctions(SemanticAnalyzer.java:254)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.visit(SemanticAnalyzer.java:237)
+	at org.wso2.ballerinalang.compiler.tree.BLangPackage.accept(BLangPackage.java:150)
+	at org.wso2.ballerinalang.compiler.semantics.analyzer.SemanticAnalyzer.analyze(SemanticAnalyzer.java:221)
+	at org.wso2.ballerinalang.compiler.CompilerDriver.typeCheck(CompilerDriver.java:180)
+	at org.wso2.ballerinalang.compiler.CompilerDriver.compile(CompilerDriver.java:147)
+	at org.wso2.ballerinalang.compiler.CompilerDriver.compilePackageSymbol(CompilerDriver.java:139)
+	at org.wso2.ballerinalang.compiler.CompilerDriver.compilePackage(CompilerDriver.java:106)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.wso2.ballerinalang.compiler.Compiler.compilePackages(Compiler.java:139)
+	at org.wso2.ballerinalang.compiler.Compiler.compilePackage(Compiler.java:155)
+	at org.wso2.ballerinalang.compiler.Compiler.compile(Compiler.java:79)
+	at org.ballerinalang.launcher.LauncherUtils.compile(LauncherUtils.java:257)
+	at org.ballerinalang.launcher.LauncherUtils.runProgram(LauncherUtils.java:93)
+	at org.ballerinalang.launcher.Main$RunCmd.execute(Main.java:256)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 

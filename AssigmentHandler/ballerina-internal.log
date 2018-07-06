@@ -1,0 +1,14 @@
+[2018-07-04 14:19:46,163] ERROR {org.ballerinalang.launcher.Main} - main function not found in 'gmail_reader.bal' 
+java.lang.RuntimeException: main function not found in 'gmail_reader.bal'
+	at org.ballerinalang.launcher.LauncherUtils.runProgram(LauncherUtils.java:101)
+	at org.ballerinalang.launcher.Main$RunCmd.execute(Main.java:256)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-04 14:21:21,024] ERROR {org.ballerinalang.launcher.Main} - main function not found in 'gmail_reader.bal' 
+java.lang.RuntimeException: main function not found in 'gmail_reader.bal'
+	at org.ballerinalang.launcher.LauncherUtils.runProgram(LauncherUtils.java:101)
+	at org.ballerinalang.launcher.Main$RunCmd.execute(Main.java:256)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
