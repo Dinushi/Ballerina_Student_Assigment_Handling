@@ -74,7 +74,7 @@ function main(string... args){
     string[] arrayOfMsgIds = [];//take these string
     //<string>5----->converting data types,
     int i = 0;
-    //int k=<int>msgList.resultSizeEstimate;//ask from Dinika
+    //int k=<int>msgList.resultSizeEstimate;
     while (i < 10) {
         string message_Id = <string>msgList["messages"][i]["messageId"];
         arrayOfMsgIds[i] =message_Id;
