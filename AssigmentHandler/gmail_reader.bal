@@ -71,7 +71,7 @@ function main(string... args){
     }
 
 
-    string[] arrayOfMsgIds = [];//take these string
+    string[] arrayOfMsgIds = [];
     //<string>5----->converting data types,
     int i = 0;
     //int k=<int>msgList.resultSizeEstimate;
@@ -82,16 +82,7 @@ function main(string... args){
         i++;
     }
 
-    //int round=2;
-    //foreach msg_id in arrayOfMsgIds {
-        //string[] values=readDataFromEmails(msg_id );
-        //if (values[5]== "Assigment Submission") {
-          //  io:println("found a submission email");
-            //addDetailsToGSheet(values,round);
-            //round++;
-        //}
 
-   // }
     int round=2;
     foreach msg_id in arrayOfMsgIds {
         boolean result = checkTheMailIsAnAssigmentSubmission(msg_id);
